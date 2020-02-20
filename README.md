@@ -4,7 +4,7 @@
 [![npm version](https://img.shields.io/npm/v/@angular-extensions/lint-rules.svg?style=flat-square)](https://www.npmjs.com/package/@angular-extensions/lint-rules)
 [![npm downloads total](https://img.shields.io/npm/dt/@angular-extensions/lint-rules.svg?style=flat-square)](https://www.npmjs.com/package/@angular-extensions/lint-rules)
 [![npm downloads monthly](https://img.shields.io/npm/dm/@angular-extensions/lint-rules.svg?style=flat-square)](https://www.npmjs.com/package/@angular-extensions/lint-rules)
-[![CircleCI](https://circleci.com/gh/bithost-gmbh/@angular-extensions/lint-rules.svg?style=svg)](https://circleci.com/gh/bithost-gmbh/@angular-extensions/lint-rules)
+[![CircleCI](https://circleci.com/gh/angular-extensions/lint-rules.svg?style=svg)](https://circleci.com/gh/angular-extensions/lint-rules)
 
 ## Description
 This repository offers some [tslint](https://github.com/palantir/tslint) rules useful for angular projects, see [Rules](#Rules).
@@ -148,8 +148,8 @@ class MyComponent implements SomeInterface, OnDestroy {
 * https://github.com/cartant/rxjs-tslint-rules/pull/107
 
 ## Contributors
-* Esteban Gehring (@macjohnny)
-* Lutz Bliska (@lbliska)
+* Esteban Gehring ([@macjohnny](https://github.com/macjohnny))
+* Lutz Bliska ([@lbliska](https://github.com/lbliska))
 
 Note: this project is based on work in https://github.com/cartant/rxjs-tslint-rules/pull/107
 
