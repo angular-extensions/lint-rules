@@ -1,0 +1,97 @@
+
+class MyClass {
+    ngOnDestroy() {
+        const a = 5;
+    }
+}
+class MySubClass extends MyClass {
+
+}
+
+class MySubClass2 extends MyClass {
+    ngOnDestroy() {}
+}
+
+@Component({
+  selector: 'app-my'
+})
+class MyComponent {
+    ngOnDestroy() {
+        const b = 6;
+    }
+}
+
+@Component({
+  selector: 'app-my'
+})
+class MyComponent2 extends MyClass {
+
+    ngOnDestroy() {
+    ~~~~~~~~~~~            [super-ng-on-destroy-missing]
+        const b = 6;
+    }
+}
+
+@Component({
+  selector: 'app-my'
+})
+class MyComponent3 extends MySubClass {
+
+    ngOnDestroy() {
+    ~~~~~~~~~~~            [super-ng-on-destroy-missing]
+        const b = 6;
+    }
+}
+
+
+@Component({
+  selector: 'app-my'
+})
+class MyComponent4 extends MyClass {
+
+    ngOnDestroy() {
+        super.ngOnDestroy();
+        const b = 6;
+    }
+}
+
+@Component({
+  selector: 'app-my'
+})
+class MyComponent5 extends MySubClass {
+
+    ngOnDestroy() {
+        super.ngOnDestroy();
+        const b = 6;
+    }
+}
+
+
+class MyClass3 {
+    ngOnDestroy() {
+        const a = 5;
+    }
+}
+
+class MySubClass3 extends MyClass3 {
+
+    ngOnDestroy() {
+    ~~~~~~~~~~~            [super-ng-on-destroy-missing]
+        const a = 5;
+    }
+}
+
+@Component({
+  selector: 'app-my'
+})
+class MyComponent6 extends MySubClass3 {
+
+}
+
+class MyAbstractDirective {
+    ngOnDestroy() {
+        const a = 5;
+    }
+}
+
+[super-ng-on-destroy-missing]: call to super.ngOnDestroy() is missing

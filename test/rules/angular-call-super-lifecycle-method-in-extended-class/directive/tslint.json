@@ -1,0 +1,6 @@
+{
+  "rulesDirectory": ["../../../../dist/rules"],
+  "rules": {
+    "angular-call-super-lifecycle-method-in-extended-class": { "severity": "error" }
+  }
+}

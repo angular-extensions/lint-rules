@@ -1,0 +1,7 @@
+{
+  "rulesDirectory": ["rules"],
+  "rules": {
+    "angular-rxjs-takeuntil-before-subscribe": { "severity": "error" },
+    "angular-call-super-lifecycle-method-in-extended-class": { "severity": "error" }
+  }
+}

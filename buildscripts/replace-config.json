@@ -1,0 +1,7 @@
+{
+  "from": "\"private\": true,",
+  "to": "",
+  "files": [
+    "dist/package.json"
+  ]
+}

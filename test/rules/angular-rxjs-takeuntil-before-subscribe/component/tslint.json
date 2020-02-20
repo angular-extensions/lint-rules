@@ -1,0 +1,6 @@
+{
+  "rulesDirectory": ["../../../../dist/rules"],
+  "rules": {
+    "angular-rxjs-takeuntil-before-subscribe": { "severity": "error" }
+  }
+}

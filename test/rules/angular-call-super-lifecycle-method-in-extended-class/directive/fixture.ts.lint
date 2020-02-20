@@ -1,0 +1,30 @@
+class MyAbstractDirective {
+    ngOnDestroy() {
+        const a = 5;
+    }
+}
+
+@Directive({
+  selector: '[some-attribute]'
+})
+class MyDirective extends MyAbstractDirective {
+
+    ngOnDestroy() {
+    ~~~~~~~~~~~            [super-ng-on-destroy-missing]
+        const a = 5;
+    }
+}
+
+@Directive({
+  selector: '[some-attribute]'
+})
+class MyDirective extends MyAbstractDirective {
+
+    ngOnDestroy() {
+        super.ngOnDestroy();
+        const a = 5;
+    }
+}
+
+
+[super-ng-on-destroy-missing]: call to super.ngOnDestroy() is missing

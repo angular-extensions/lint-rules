@@ -1,0 +1,36 @@
+{
+  "name": "@angular-extensions/lint-rules",
+  "version": "1.0.0",
+  "description": "tslint rules for angular projects",
+  "main": "lint-rules.json",
+  "scripts": {
+    "build": "tsc && cpy ./package.json ./dist/ && cpy ./lint-rules.json ./dist/ && cpy ./README.md ./dist/",
+    "test": "npm run build && tslint --test test/rules/**/tslint.json",
+    "publish-package": "standard-version && npm run build && replace-in-file --configFile=buildscripts/replace-config.json && npm publish dist && git push --follow-tags"
+  },
+  "author": "Esteban Gehring, Bithost GmbH",
+  "repository": {
+    "url": "https://github.com/angular-extensions/lint-rules"
+  },
+  "bugs": {
+    "url": "https://github.com/angular-extensions/lint-rules/issues"
+  },
+  "license": "MIT",
+  "peerDependencies": {
+    "tslint": "5.*",
+    "typescript": "^3.0.0"
+  },
+  "private": true,
+  "devDependencies": {
+    "cpy-cli": "^3.0.0",
+    "replace-in-file": "^5.0.2",
+    "rxjs": "^6.5.3",
+    "standard-version": "^7.1.0",
+    "tslint": "^5.9.1",
+    "typescript": "~3.7.2"
+  },
+  "dependencies": {
+    "@phenomnomnominal/tsquery": "^4.0.0",
+    "tsutils-etc": "^1.1.0"
+  }
+}
