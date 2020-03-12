@@ -415,7 +415,7 @@ export class Rule extends Lint.Rules.TypedRule {
   }
 
   /**
-   * Checks whether the class implements an ngOnDestroy method and invokes .next() and .complete() on the destroy subjects
+   * Checks whether the class implements an ngOnDestroy method and invokes .next() on the destroy subjects
    */
   private checkNgOnDestroy(
     sourceFile: ts.SourceFile,
@@ -428,7 +428,7 @@ export class Rule extends Lint.Rules.TypedRule {
     );
 
     // check whether the ngOnDestroy method is implemented
-    // and contains invocations of .next() and .complete() on all destroy subjects used
+    // and contains invocations of .next() on all destroy subjects used
     if (ngOnDestroyMethod) {
       failures.push(
         ...this.checkDestroySubjectMethodInvocation(
@@ -436,14 +436,6 @@ export class Rule extends Lint.Rules.TypedRule {
           ngOnDestroyMethod,
             destroySubjectNameUsed,
           "next"
-        )
-      );
-      failures.push(
-        ...this.checkDestroySubjectMethodInvocation(
-          sourceFile,
-          ngOnDestroyMethod,
-            destroySubjectNameUsed,
-          "complete"
         )
       );
     } else {
