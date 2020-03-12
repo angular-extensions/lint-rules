@@ -149,6 +149,7 @@ class MyComponent implements SomeInterface, OnDestroy {
 ## Contributors
 * Esteban Gehring ([@macjohnny](https://github.com/macjohnny))
 * Lutz Bliska ([@lbliska](https://github.com/lbliska))
+* Kevin Kreuzer ([@kreuzerk](https://github.com/kreuzerk))
 
 Note: this project is based on work in https://github.com/cartant/rxjs-tslint-rules/pull/107
 
