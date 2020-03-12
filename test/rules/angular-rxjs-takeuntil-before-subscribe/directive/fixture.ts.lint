@@ -73,7 +73,6 @@ class MyDirective implements OnDestroy {
 
     ngOnDestroy() {
     ~~~~~~~~~~~            [angular-rxjs-takeuntil-before-subscribe-subscribe-next-missing]
-    ~~~~~~~~~~~            [angular-rxjs-takeuntil-before-subscribe-subscribe-complete-missing]
       // this._destroy$.next() is missing
       this.destroy$.next();
       this.destroy$.complete();

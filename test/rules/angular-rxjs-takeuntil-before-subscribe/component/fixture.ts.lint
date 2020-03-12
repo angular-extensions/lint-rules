@@ -78,10 +78,8 @@ class MyComponent implements OnDestroy {
 
     ngOnDestroy() {
     ~~~~~~~~~~~            [angular-rxjs-takeuntil-before-subscribe-subscribe-next-missing]
-    ~~~~~~~~~~~            [angular-rxjs-takeuntil-before-subscribe-subscribe-complete-missing]
       // this._destroy$.next() is missing
       this.destroy$.next();
-      this.destroy$.complete();
     }
 }
 
@@ -126,7 +124,6 @@ class MyComponent implements SomeInterface, OnDestroy {
 
     ngOnDestroy() {
       this.destroy$.next();
-      this.destroy$.complete();
     }
 }
 
@@ -140,7 +137,6 @@ class MySuperAbstractComponent2 {
 
     ngOnDestroy() {
       this.destroy$.next();
-      this.destroy$.complete();
     }
 }
 
