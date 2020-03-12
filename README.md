@@ -95,7 +95,7 @@ This rule tries to avoid memory leaks in angular components and directives when 
 by enforcing the application of the `takeUntil(this.destroy$)` operator before the `.subscribe()` 
 as well as before certain operators (`shareReplay` without `refCount: true`)
 and ensuring the component implements the `ngOnDestroy` 
-method invoking `this.destroy$.next()` and `this.destroy$.complete()`.
+method invoking `this.destroy$.next()`.
 All classes with a `@Component` or `@Directive` decorator and all their parent classes will be checked.
 
 #### Example
@@ -136,7 +136,6 @@ class MyComponent implements SomeInterface, OnDestroy {
 
     ngOnDestroy() {
       this.destroy$.next();
-      this.destroy$.complete();
     }
 }
 ```
