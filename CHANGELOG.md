@@ -2,7 +2,8 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
-### [1.2.1](https://github.com/angular-extensions/lint-rules/compare/v1.2.0...v1.2.1) (2020-09-08)
+## [1.2.1](https://github.com/angular-extensions/lint-rules/compare/v1.2.0...v1.2.1) (2020-09-08)
+* chore: update peer dependency versions 
 
 ## [1.2.0](https://github.com/angular-extensions/lint-rules/compare/v1.1.1...v1.2.0) (2020-03-12)
 
@@ -11,7 +12,7 @@ All notable changes to this project will be documented in this file. See [standa
 
 * **rule:** do not check for the complete method to be called since its not necessary ([#3](https://github.com/angular-extensions/lint-rules/issues/3)) ([d661791](https://github.com/angular-extensions/lint-rules/commit/d6617911eece011ddb07fec5ecde4cef79e28800))
 
-### [1.1.1](https://github.com/angular-extensions/lint-rules/compare/v1.0.0...v1.1.1) (2020-02-20)
+## [1.1.1](https://github.com/angular-extensions/lint-rules/compare/v1.0.0...v1.1.1) (2020-02-20)
 
 
 ### Bug Fixes
